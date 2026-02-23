@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yoga Clothing – Nyaman di Setiap Gerakan</title>
+  <meta name="description"
+    content="Yoga Clothing – Koleksi kaos berkualitas tinggi dengan berbagai pilihan warna, desain, dan bahan. Temukan pakaian yang nyaman untuk aktivitas yoga dan sehari-hari Anda." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="nav-logo">
+        <span class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <circle cx="14" cy="14" r="13" stroke="currentColor" stroke-width="1.5" />
+            <path d="M8 14c0-3.3 2.7-6 6-6s6 2.7 6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+            <path d="M14 8v12M10 12l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+              stroke-linejoin="round" />
+          </svg>
+        </span>
+        Yoga <span class="logo-accent">Clothing</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#colors" class="nav-link">Warna</a></li>
+        <li><a href="#collection" class="nav-link">Koleksi</a></li>
+        <li><a href="#fabrics" class="nav-link">Bahan</a></li>
+        <li><a href="#sizes" class="nav-link">Ukuran</a></li>
+        <li><a href="#contact" class="nav-cta">Pesan Sekarang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-orb orb-1"></div>
+      <div class="hero-orb orb-2"></div>
+      <div class="hero-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        New Collection 2025
+      </div>
+      <h1 class="hero-title">
+        Nyaman di<br>
+        <em>Setiap Gerakan</em>
+      </h1>
+      <p class="hero-subtitle">
+        Kaos premium berkualitas tinggi dengan berbagai pilihan bahan, warna, dan ukuran.
+        Dirancang untuk gaya hidup aktif dan casual Anda.
+      </p>
+      <div class="hero-actions">
+        <a href="#collection" class="btn btn-primary">Lihat Koleksi</a>
+        <a href="#fabrics" class="btn btn-ghost">Pilih Bahan</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">6+</span>
+          <span class="stat-label">Jenis Bahan</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Pilihan Warna</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">XS–XXL</span>
+          <span class="stat-label">Semua Ukuran</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-palette-showcase">
+        <div class="palette-card">
+          <div class="palette-label">Pilihan Warna Tersedia</div>
+          <div class="palette-swatches-hero">
+            <div class="ps-item" style="background:#5a7c6b;"><span>Sage Green</span></div>
+            <div class="ps-item" style="background:#c9a84c;"><span>Mustard Yellow</span></div>
+            <div class="ps-item" style="background:#3d3d3d;"><span>Charcoal</span></div>
+            <div class="ps-item" style="background:#e8e0d5; color: #555;"><span>Oat White</span></div>
+            <div class="ps-item" style="background:#8c7b99;"><span>Dusty Lilac</span></div>
+            <div class="ps-item" style="background:#c47b6a;"><span>Terracotta</span></div>
+            <div class="ps-item" style="background:#2c4a6e;"><span>Deep Navy</span></div>
+            <div class="ps-item" style="background:#e8c4a0; color: #555;"><span>Peach Sand</span></div>
+            <div class="ps-item" style="background:#7b9e87;"><span>Mint Forest</span></div>
+            <div class="ps-item" style="background:#d4b896; color: #555;"><span>Warm Camel</span></div>
+            <div class="ps-item" style="background:#5c6b8a;"><span>Slate Blue</span></div>
+            <div class="ps-item" style="background:#1a1a1a;"><span>Jet Black</span></div>
+          </div>
+          <div class="palette-footer">
+            <span class="pf-dot" style="background:#5a7c6b;"></span>
+            <span class="pf-dot" style="background:#c9a84c;"></span>
+            <span class="pf-dot" style="background:#3d3d3d;"></span>
+            <span class="pf-more">+9 warna lainnya</span>
+          </div>
+        </div>
+        <div class="hero-features">
+          <div class="hf-item">
+            <span class="hf-icon">✦</span>
+            <span>Bahan Premium 6 Pilihan</span>
+          </div>
+          <div class="hf-item">
+            <span class="hf-icon">✦</span>
+            <span>Cocok untuk Sablon & Bordir</span>
+          </div>
+          <div class="hf-item">
+            <span class="hf-icon">✦</span>
+            <span>Toleransi Ukuran 1–2 cm</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== COLOR CATALOG ===== -->
+  <section class="section colors-section" id="colors">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Palet Warna</span>
+        <h2 class="section-title">Pilihan Warna <em>Favoritmu</em></h2>
+        <p class="section-desc">Tersedia dalam 12 pilihan warna yang trendi dan elegan untuk melengkapi gaya Anda.</p>
+      </div>
+      <div class="colors-grid">
+        <div class="color-card" data-color="#5a7c6b">
+          <div class="color-swatch-large" style="background: #5a7c6b;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Sage Green</span>
+            <span class="color-code">#5A7C6B</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#c9a84c">
+          <div class="color-swatch-large" style="background: #c9a84c;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Mustard Yellow</span>
+            <span class="color-code">#C9A84C</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#3d3d3d">
+          <div class="color-swatch-large" style="background: #3d3d3d;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Charcoal</span>
+            <span class="color-code">#3D3D3D</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#e8e0d5">
+          <div class="color-swatch-large" style="background: #e8e0d5; border: 1px solid #ddd;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Oat White</span>
+            <span class="color-code">#E8E0D5</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#8c7b99">
+          <div class="color-swatch-large" style="background: #8c7b99;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Dusty Lilac</span>
+            <span class="color-code">#8C7B99</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#c47b6a">
+          <div class="color-swatch-large" style="background: #c47b6a;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Terracotta</span>
+            <span class="color-code">#C47B6A</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#2c4a6e">
+          <div class="color-swatch-large" style="background: #2c4a6e;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Deep Navy</span>
+            <span class="color-code">#2C4A6E</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#e8c4a0">
+          <div class="color-swatch-large" style="background: #e8c4a0;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Peach Sand</span>
+            <span class="color-code">#E8C4A0</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#7b9e87">
+          <div class="color-swatch-large" style="background: #7b9e87;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Mint Forest</span>
+            <span class="color-code">#7B9E87</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#d4b896">
+          <div class="color-swatch-large" style="background: #d4b896;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Warm Camel</span>
+            <span class="color-code">#D4B896</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#5c6b8a">
+          <div class="color-swatch-large" style="background: #5c6b8a;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Slate Blue</span>
+            <span class="color-code">#5C6B8A</span>
+          </div>
+        </div>
+        <div class="color-card" data-color="#1a1a1a">
+          <div class="color-swatch-large" style="background: #1a1a1a;">
+            <div class="color-shine"></div>
+          </div>
+          <div class="color-info">
+            <span class="color-name">Jet Black</span>
+            <span class="color-code">#1A1A1A</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COLLECTION ===== -->
+  <section class="section collection-section" id="collection">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Koleksi Kami</span>
+        <h2 class="section-title">Desain <em>Terbaik</em></h2>
+        <p class="section-desc">Setiap potongan dirancang untuk kenyamanan maksimal, cocok untuk yoga, olahraga, maupun
+          aktivitas kasual.</p>
+      </div>
+      <div class="collection-grid">
+        <!-- Card 1 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=480&q=80&auto=format&fit=crop"
+              alt="Classic Logo Tee – kaos putih basic" class="product-img" loading="lazy" />
+            <div class="product-badge-label">Regular Fit</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Classic Logo Tee</h3>
+            <p class="product-desc">Kaos basic dengan potongan regular fit. Nyaman untuk aktivitas harian dan mudah
+              dipadukan.</p>
+            <div class="product-tags">
+              <span class="tag">Regular Fit</span>
+              <span class="tag">Unisex</span>
+              <span class="tag">S–XXL</span>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%2C%20saya%20tertarik%20dengan%20Classic%20Logo%20Tee"
+              class="product-order-btn" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=480&q=80&auto=format&fit=crop"
+              alt="Oversize Comfort Tee – kaos oversize" class="product-img" loading="lazy" />
+            <div class="product-badge-label">Oversize</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Oversize Comfort Tee</h3>
+            <p class="product-desc">Kaos oversize dengan potongan longgar yang trendi. Cocok untuk gaya kasual santai
+              dan streetwear.</p>
+            <div class="product-tags">
+              <span class="tag">Oversize</span>
+              <span class="tag">Unisex</span>
+              <span class="tag">S–XXL</span>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%2C%20saya%20tertarik%20dengan%20Oversize%20Comfort%20Tee"
+              class="product-order-btn" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=480&q=80&auto=format&fit=crop"
+              alt="Slim Fit Premium Tee – kaos slim fit" class="product-img" loading="lazy" />
+            <div class="product-badge-label">Slim Fit</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Slim Fit Premium Tee</h3>
+            <p class="product-desc">Kaos slim fit dengan bahan premium yang mengikuti lekuk tubuh. Tampil rapi dan
+              profesional.</p>
+            <div class="product-tags">
+              <span class="tag">Slim Fit</span>
+              <span class="tag">Unisex</span>
+              <span class="tag">XS–XL</span>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%2C%20saya%20tertarik%20dengan%20Slim%20Fit%20Premium%20Tee"
+              class="product-order-btn" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card">
+          <div class="product-img-wrap">
+            <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=480&q=80&auto=format&fit=crop"
+              alt="Vintage Wash Tee – kaos vintage" class="product-img" loading="lazy" />
+            <div class="product-badge-label">Vintage</div>
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Vintage Wash Tee</h3>
+            <p class="product-desc">Kaos dengan efek vintage wash yang memberikan kesan klasik dan unik. Tekstur lembut
+              dan ringan.</p>
+            <div class="product-tags">
+              <span class="tag">Regular Fit</span>
+              <span class="tag">Unisex</span>
+              <span class="tag">S–XXL</span>
+            </div>
+            <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%2C%20saya%20tertarik%20dengan%20Vintage%20Wash%20Tee"
+              class="product-order-btn" target="_blank" rel="noopener">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+              </svg>
+              Pesan via WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FABRICS ===== -->
+  <section class="section fabrics-section" id="fabrics">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Pilihan Bahan</span>
+        <h2 class="section-title">Kualitas <em>Nyata</em> di Setiap Helai</h2>
+        <p class="section-desc">Kami menyediakan 6 jenis bahan premium untuk memastikan kenyamanan dan ketahanan
+          optimal.</p>
+      </div>
+      <div class="fabrics-grid">
+        <!-- Combed -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #5a7c6b;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="2" />
+              <path d="M16 16 v16 M20 14 v20 M24 16 v16 M28 14 v20 M32 16 v16" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Combed 20s / 30s</h3>
+          <p class="fabric-desc">Bahan katun paling populer. Serat benang dirapikan (combed) sehingga permukaan lebih
+            halus, lembut di kulit, dan tidak mudah berbulu. Cocok untuk sablon dan bordir.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Sangat halus</span>
+            <span class="prop"><span class="prop-icon">✓</span> Tahan lama</span>
+            <span class="prop"><span class="prop-icon">✓</span> Cocok sablon</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 160–180 gsm</div>
+        </div>
+
+        <!-- Cotton">Cotton Bamboo -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #c9a84c;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <path d="M24 8 Q32 12 32 24 Q32 36 24 40 Q16 36 16 24 Q16 12 24 8Z" stroke="currentColor"
+                stroke-width="2" />
+              <path d="M24 16 Q20 20 20 24 Q20 28 24 32" stroke="currentColor" stroke-width="1.5"
+                stroke-linecap="round" />
+              <path d="M16 20 Q20 18 24 20 Q28 18 32 20" stroke="currentColor" stroke-width="1.2"
+                stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Cotton Bamboo</h3>
+          <p class="fabric-desc">Campuran serat bambu dan katun alami. Bahan ini sangat ringan, breathable, dan memiliki
+            kemampuan penyerapan keringat yang luar biasa. Ramah lingkungan dan anti bakteri alami.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Ramah lingkungan</span>
+            <span class="prop"><span class="prop-icon">✓</span> Anti bakteri</span>
+            <span class="prop"><span class="prop-icon">✓</span> Super breathable</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 140–160 gsm</div>
+        </div>
+
+        <!-- Cotton Fleece -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #8c7b99;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <rect x="10" y="14" width="28" height="20" rx="10" stroke="currentColor" stroke-width="2" />
+              <path d="M18 22 Q24 18 30 22 Q24 26 18 22Z" stroke="currentColor" stroke-width="1.5" />
+              <path d="M14 26 Q24 20 34 26" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Cotton Fleece</h3>
+          <p class="fabric-desc">Bahan tebal dengan lapisan dalam berbulu halus (fleece). Sangat hangat dan nyaman untuk
+            cuaca dingin. Sering digunakan untuk sweater dan hoodie berkualitas tinggi.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Hangat & nyaman</span>
+            <span class="prop"><span class="prop-icon">✓</span> Soft interior</span>
+            <span class="prop"><span class="prop-icon">✓</span> Premium feel</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 250–320 gsm</div>
+        </div>
+
+        <!-- Drifit -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #2c4a6e;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <path d="M24 10 L24 30 M18 20 L24 10 L30 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M16 32 Q24 36 32 32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              <path d="M20 36 Q24 38 28 36" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Drifit / Polyester</h3>
+          <p class="fabric-desc">Bahan sintetis teknis yang dirancang khusus untuk olahraga. Sistem wicking aktif
+            menyerap dan menguapkan keringat dengan cepat menjaga tubuh tetap kering dan segar.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Moisture-wicking</span>
+            <span class="prop"><span class="prop-icon">✓</span> Ringan & elastis</span>
+            <span class="prop"><span class="prop-icon">✓</span> Ideal olahraga</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 150–170 gsm</div>
+        </div>
+
+        <!-- Linen -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #c47b6a;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <path d="M12 12 L36 36 M12 20 L28 36 M20 12 L36 28 M12 28 L20 36 M28 12 L36 20" stroke="currentColor"
+                stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Linen / Linen Cotton</h3>
+          <p class="fabric-desc">Terbuat dari serat tanaman rami alami. Bahan linen sangat breathable, ringan, dan
+            memiliki daya serap tinggi. Teksturnya sedikit kasar namun semakin lembut seiring pemakaian.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Natural fiber</span>
+            <span class="prop"><span class="prop-icon">✓</span> Super breathable</span>
+            <span class="prop"><span class="prop-icon">✓</span> Makin lembut</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 120–150 gsm</div>
+        </div>
+
+        <!-- Rayon / Viscose -->
+        <div class="fabric-card">
+          <div class="fabric-icon-wrap" style="--fc: #d4b896;">
+            <svg viewBox="0 0 48 48" fill="none" class="fabric-icon">
+              <circle cx="24" cy="24" r="12" stroke="currentColor" stroke-width="2" />
+              <path d="M24 12 Q36 18 36 24 Q36 30 24 36 Q12 30 12 24 Q12 18 24 12Z" stroke="currentColor"
+                stroke-width="1.2" fill="none" />
+              <circle cx="24" cy="24" r="4" stroke="currentColor" stroke-width="1.5" />
+            </svg>
+          </div>
+          <h3 class="fabric-name">Rayon / Viscose</h3>
+          <p class="fabric-desc">Bahan semi-sintetis yang lembut, ringan, dan jatuh dengan indah mengikuti tubuh. Rayon
+            sangat nyaman untuk cuaca panas karena menyerap keringat dengan baik dan berkilau alami.</p>
+          <div class="fabric-props">
+            <span class="prop"><span class="prop-icon">✓</span> Lembut & jatuh</span>
+            <span class="prop"><span class="prop-icon">✓</span> Berkilau alami</span>
+            <span class="prop"><span class="prop-icon">✓</span> Anti gerah</span>
+          </div>
+          <div class="fabric-weight">Gramasi: 130–160 gsm</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SIZE GUIDE ===== -->
+  <section class="section sizes-section" id="sizes">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Panduan Ukuran</span>
+        <h2 class="section-title">Temukan Ukuran <em>Sempurnamu</em></h2>
+        <p class="section-desc">Ukur tubuh Anda dan temukan ukuran yang paling pas untuk kenyamanan maksimal.</p>
+      </div>
+      <div class="size-content">
+        <div class="size-tip-card">
+          <div class="tip-icon">
+            <svg viewBox="0 0 40 40" fill="none" width="40" height="40">
+              <circle cx="20" cy="20" r="18" stroke="currentColor" stroke-width="1.5" />
+              <path d="M20 12v8l4 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div>
+            <h4>Tips Mengukur</h4>
+            <p>Gunakan pita ukur dan ukur langsung pada tubuh. Toleransi ukuran 1–2 cm. Ukur saat berdiri tegak untuk
+              hasil terbaik.</p>
+          </div>
+        </div>
+
+        <!-- Gender tabs -->
+        <div class="size-tabs">
+          <button class="size-tab active" id="tabPria" onclick="switchSizeTab('pria')">👔 Pria</button>
+          <button class="size-tab" id="tabWanita" onclick="switchSizeTab('wanita')">👗 Wanita</button>
+        </div>
+
+        <!-- Pria table -->
+        <div class="size-table-wrap" id="tablePria">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>Ukuran</th>
+                <th>Panjang Badan</th>
+                <th>Lebar Dada</th>
+                <th>Panjang Lengan</th>
+                <th>Lebar Bahu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="size-badge">S</span></td>
+                <td>65 cm</td>
+                <td>48 cm</td>
+                <td>22 cm</td>
+                <td>43 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">M</span></td>
+                <td>70 cm</td>
+                <td>51 cm</td>
+                <td>23 cm</td>
+                <td>45 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">L</span></td>
+                <td>73 cm</td>
+                <td>54 cm</td>
+                <td>24 cm</td>
+                <td>47 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">XL</span></td>
+                <td>76 cm</td>
+                <td>57 cm</td>
+                <td>25 cm</td>
+                <td>49 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">XXL</span></td>
+                <td>79 cm</td>
+                <td>60 cm</td>
+                <td>26 cm</td>
+                <td>51 cm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Wanita table -->
+        <div class="size-table-wrap" id="tableWanita" style="display:none;">
+          <table class="size-table">
+            <thead>
+              <tr>
+                <th>Ukuran</th>
+                <th>Panjang Badan</th>
+                <th>Lebar Dada</th>
+                <th>Panjang Lengan</th>
+                <th>Lebar Bahu</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="size-badge">S</span></td>
+                <td>60 cm</td>
+                <td>44 cm</td>
+                <td>19 cm</td>
+                <td>38 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">M</span></td>
+                <td>63 cm</td>
+                <td>47 cm</td>
+                <td>20 cm</td>
+                <td>40 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">L</span></td>
+                <td>66 cm</td>
+                <td>50 cm</td>
+                <td>21 cm</td>
+                <td>42 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">XL</span></td>
+                <td>69 cm</td>
+                <td>53 cm</td>
+                <td>22 cm</td>
+                <td>44 cm</td>
+              </tr>
+              <tr>
+                <td><span class="size-badge">XXL</span></td>
+                <td>72 cm</td>
+                <td>56 cm</td>
+                <td>23 cm</td>
+                <td>46 cm</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <p class="size-note">* Ukuran di atas adalah ukuran pakaian jadi, bukan ukuran tubuh. Toleransi ±1–2 cm. Hubungi
+          kami via WhatsApp jika butuh saran ukuran!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Testimoni</span>
+        <h2 class="section-title">Apa Kata <em>Pelanggan</em></h2>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Kaosnya nyaman banget! Bahan combed 30s-nya lembut dan tidak panas. Warna sage
+            green-nya persis seperti di website. Pasti reorder!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #5a7c6b;">A</div>
+            <div>
+              <span class="author-name">Anita S.</span>
+              <span class="author-loc">Jakarta</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Oversize tee-nya keren banget! Cocok buat casual sehari-hari. Pengiriman cepat
+            dan packaging rapi. Pelayanan via WA juga responsif."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #c9a84c;">R</div>
+            <div>
+              <span class="author-name">Rizky M.</span>
+              <span class="author-loc">Bandung</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Bahan drifit-nya keren untuk olahraga, keringat langsung diserap. Pilihan
+            warnanya banyak dan all size tersedia. Recommended banget!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background: #2c4a6e;">D</div>
+            <div>
+              <span class="author-name">Dina K.</span>
+              <span class="author-loc">Surabaya</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA / FOOTER ===== -->
+  <section class="cta-section" id="contact">
+    <div class="cta-bg">
+      <div class="cta-orb orb-a"></div>
+      <div class="cta-orb orb-b"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <span class="cta-badge">Ready to Order?</span>
+        <h2 class="cta-title">Suka yang Kamu Lihat?<br>Chat dengan Kami!</h2>
+        <p class="cta-subtitle">Dapatkan konsultasi gratis tentang pilihan bahan, warna, dan ukuran.<br>Kami siap
+          membantu Anda menemukan kaos impian.</p>
+        <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%21%20Saya%20tertarik%20dengan%20koleksi%20kaos%20Anda.%20Boleh%20saya%20tahu%20lebih%20lanjut%3F"
+          class="cta-wa-btn" id="mainWaBtn" target="_blank" rel="noopener">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+          </svg>
+          Chat di WhatsApp Sekarang
+        </a>
+        <div class="cta-sub">Respon cepat · Senin – Minggu, 08.00–21.00 WIB</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <span class="footer-logo">Yoga <span>Clothing</span></span>
+        <p>Kualitas terbaik untuk gaya hidupmu.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#colors">Warna</a>
+        <a href="#collection">Koleksi</a>
+        <a href="#fabrics">Bahan</a>
+        <a href="#sizes">Ukuran</a>
+      </div>
+      <div class="footer-copy">© 2025 Yoga Clothing. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- FIXED WA BUTTON -->
+  <a href="https://wa.me/6281234567890?text=Halo%20Yoga%20Clothing%21%20Saya%20tertarik%20dengan%20koleksi%20kaos%20Anda."
+    class="wa-fixed" id="waFixed" target="_blank" rel="noopener" aria-label="Chat WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893A11.821 11.821 0 0020.885 3.488" />
+    </svg>
+    <span class="wa-fixed-label">Order Sekarang</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
