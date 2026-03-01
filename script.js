@@ -113,6 +113,44 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // ===== TOGGLE COLORS LOGIC =====
+  const colorCardsGrid = document.querySelectorAll('.colors-grid .color-card');
+  const toggleBtn = document.getElementById('toggleColorsBtn');
+  let isExpanded = false;
+
+  // Hide cards beyond 12 initially
+  colorCardsGrid.forEach((card, index) => {
+    if (index >= 12) {
+      card.style.display = 'none';
+      card.classList.add('hidden-color-card');
+    }
+  });
+
+  if (toggleBtn) {
+    toggleBtn.addEventListener('click', function () {
+      isExpanded = !isExpanded;
+      if (isExpanded) {
+        colorCardsGrid.forEach((card, index) => {
+          if (index >= 12) {
+            card.style.display = '';
+            // Add slight stagger to intro
+            card.style.animation = `fadeInUp 0.4s ease forwards`;
+          }
+        });
+        this.textContent = 'Sembunyikan';
+      } else {
+        colorCardsGrid.forEach((card, index) => {
+          if (index >= 12) {
+            card.style.display = 'none';
+            card.style.animation = ''; // Reset
+          }
+        });
+        this.textContent = 'Lihat Lainnya';
+        document.getElementById('colors').scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+
   // ===== SCROLL REVEAL =====
   const revealElements = document.querySelectorAll(
     '.color-card, .product-card, .fabric-card, .testimonial-card, .section-header, .size-content, .hero-stats'

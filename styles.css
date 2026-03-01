@@ -131,7 +131,7 @@ body {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 700;
@@ -140,9 +140,12 @@ body {
   letter-spacing: -0.01em;
 }
 
-.logo-icon {
-  color: var(--green-400);
-  display: flex;
+.nav-brand-img {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
 }
 
 .logo-accent {
@@ -549,6 +552,18 @@ body {
   100% {
     transform: scaleY(0);
     transform-origin: bottom;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
