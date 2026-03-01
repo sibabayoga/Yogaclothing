@@ -225,7 +225,9 @@ document.addEventListener('DOMContentLoaded', function () {
         }
       });
     },
-    { threshold: 0.4 }
+    {
+      rootMargin: '-20% 0px -70% 0px'
+    }
   );
 
   sections.forEach(sec => sectionObserver.observe(sec));
