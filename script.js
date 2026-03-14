@@ -1,5 +1,5 @@
-/* =========================================
-   YOGA CLOTHING – Interactive JavaScript
+﻿/* =========================================
+   YOGA CLOTHING â€“ Interactive JavaScript
    ========================================= */
 
 // ===== SIZE TAB SWITCHER (global, used by inline onclick) =====
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
     return `rgba(${r},${g},${b},${alpha})`;
   }
 
-  // ===== COLOR CARDS – Click to animate =====
+  // ===== COLOR CARDS â€“ Click to animate =====
   document.querySelectorAll('.color-card').forEach(card => {
     card.addEventListener('click', function () {
       const color = this.getAttribute('data-color');
@@ -313,6 +313,132 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  console.log('%c🌿 Yoga Clothing Landing Page', 'color: #5a7c6b; font-size: 16px; font-weight: bold;');
-  console.log('%cBuilt with love & DM Sans 💛', 'color: #c9a84c; font-size: 12px;');
+  // ===== IMAGE MODAL =====
+  const modal = document.getElementById("imageModal");
+  const expandedImg = document.getElementById("expandedImg");
+  const spanClose = document.querySelector(".img-modal-close");
+
+  if (modal && expandedImg) {
+    document.querySelectorAll('.product-img').forEach(img => {
+      img.addEventListener('click', function() {
+        modal.style.display = "flex";
+        expandedImg.src = this.src;
+        document.body.style.overflow = "hidden"; // Prevent scrolling
+      });
+    });
+
+    if (spanClose) {
+      spanClose.addEventListener('click', function() {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      });
+    }
+
+    modal.addEventListener('click', function(e) {
+      if (e.target === modal) {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+
+    // Close on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === "Escape" && modal.style.display === "flex") {
+        modal.style.display = "none";
+        document.body.style.overflow = "";
+      }
+    });
+  }
+
+  console.log('%cðŸŒ¿ Yoga Clothing Landing Page', 'color: #5a7c6b; font-size: 16px; font-weight: bold;');
+  console.log('%cBuilt with love & DM Sans ðŸ’›', 'color: #c9a84c; font-size: 12px;');
+
+  // ===== STAR RATING =====
+  const stars = document.querySelectorAll('.star');
+  const inputRating = document.getElementById('inputRating');
+
+  stars.forEach(star => {
+    star.addEventListener('mouseenter', function () {
+      const val = parseInt(this.getAttribute('data-value'));
+      stars.forEach((s, i) => s.classList.toggle('active', i < val));
+    });
+    star.addEventListener('click', function () {
+      const val = this.getAttribute('data-value');
+      if (inputRating) inputRating.value = val;
+      stars.forEach((s, i) => s.classList.toggle('active', i < parseInt(val)));
+    });
+  });
+
+  const starRatingEl = document.getElementById('starRating');
+  if (starRatingEl) {
+    starRatingEl.addEventListener('mouseleave', function () {
+      const selectedVal = inputRating ? parseInt(inputRating.value) || 0 : 0;
+      stars.forEach((s, i) => s.classList.toggle('active', i < selectedVal));
+    });
+  }
+
+  // ===== FEEDBACK FORM - Submit to Google Forms =====
+  const feedbackForm = document.getElementById('feedbackForm');
+  const feedbackMsg = document.getElementById('feedbackMsg');
+
+  if (feedbackForm) {
+    feedbackForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const nama = (document.getElementById('inputNama') || {}).value || '';
+      const feedbackText = (document.getElementById('inputFeedback') || {}).value || '';
+      const rating = inputRating ? inputRating.value : '';
+
+      if (!feedbackText.trim()) {
+        feedbackMsg.textContent = 'Mohon isi feedback Anda sebelum mengirim.';
+        feedbackMsg.className = 'feedback-msg error';
+        feedbackMsg.style.display = 'block';
+        return;
+      }
+
+      const FORM_ID = '1FAIpQLScfFmTcvsQ5eGOmqrzv0tFMzYNc5Nn3iqA9VtOnQ0dNqSF1eA';
+      const ENTRY_NAMA = 'entry.1452510871';
+      const ENTRY_RATING = 'entry.371006999';
+      const ENTRY_FEEDBACK = 'entry.1193197312';
+
+      const params = new URLSearchParams();
+      if (nama.trim()) params.set(ENTRY_NAMA, nama.trim());
+      if (rating) params.set(ENTRY_RATING, rating);
+      params.set(ENTRY_FEEDBACK, feedbackText.trim());
+
+      const formAction = 'https://docs.google.com/forms/d/e/' + FORM_ID + '/formResponse';
+
+      let iframe = document.getElementById('hiddenFormTarget');
+      if (!iframe) {
+        iframe = document.createElement('iframe');
+        iframe.id = 'hiddenFormTarget';
+        iframe.name = 'hiddenFormTarget';
+        iframe.style.display = 'none';
+        document.body.appendChild(iframe);
+      }
+
+      const tempForm = document.createElement('form');
+      tempForm.method = 'POST';
+      tempForm.action = formAction;
+      tempForm.target = 'hiddenFormTarget';
+      params.forEach((val, key) => {
+        const input = document.createElement('input');
+        input.type = 'hidden';
+        input.name = key;
+        input.value = val;
+        tempForm.appendChild(input);
+      });
+      document.body.appendChild(tempForm);
+      tempForm.submit();
+      document.body.removeChild(tempForm);
+
+      feedbackMsg.textContent = 'Terima kasih! Feedback Anda telah berhasil dikirim.';
+      feedbackMsg.className = 'feedback-msg success';
+      feedbackMsg.style.display = 'block';
+      feedbackForm.reset();
+      if (inputRating) inputRating.value = '';
+      stars.forEach(s => s.classList.remove('active'));
+      setTimeout(() => { feedbackMsg.style.display = 'none'; }, 6000);
+    });
+  }
+
 });
